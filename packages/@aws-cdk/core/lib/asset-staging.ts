@@ -461,6 +461,7 @@ export class AssetStaging extends Construct {
           entrypoint: options.entrypoint,
           workingDirectory: options.workingDirectory ?? AssetStaging.BUNDLING_INPUT_DIR,
           securityOpt: options.securityOpt ?? '',
+          network: options.network ?? '',
         });
       }
     } catch (err) {
