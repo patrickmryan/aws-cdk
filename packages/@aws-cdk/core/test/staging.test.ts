@@ -293,7 +293,7 @@ describe('staging', () => {
     ]);
 
     // shows a message before bundling
-    expect(processStdErrWriteSpy.calledWith('Bundling asset stack/Asset...\n')).toEqual(true);
+    expect(processStdErrWriteSpy.calledWith('Bundling asset stack/Asset..!\n')).toEqual(true);
   });
 
   test('bundled resources have absolute path when staging is disabled', () => {
